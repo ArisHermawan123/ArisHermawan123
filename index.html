@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
 <body>
     <header id="onOf">
         <h1 class="logo">Aris</h1>
@@ -18,9 +20,6 @@
                 <li><a href="#Default-contact" id="navigation-a">Contact</a></li>
                 <li><a href="#" class="menu-logout" id="navigation-a">Log out<i data-feather="log-out" class="icon-logout"></i></a></li>
             </ul>
-            <!-- <div id="menu-hamburger">  
-                <a href="#"><i data-feather="menu" onclick="hamburgerMenu()"></i></a>
-            </div> -->
            <label class="hamburger-menu" onclick="hamburgerMenu()">
             <input type="checkbox" onclick="hamburgerMenu()">
            </label> 
@@ -53,11 +52,11 @@
                     <button onclick="handleClickImage(false)" class="btn-x-1">X</button>
                     <img src="/img/WhatsApp Image 2024-03-25 at 15.14.52.svg" alt="imgaaris" class="img-overlay">
                     <h1>My Introduction</h1>
-                    <p>Hallo saya aris, saya adalah seorang Front'end Development. saya memulai mempelajari apa itu programer dari saya umur 15 tahun, di masa saya masih duduk di kursi SMA sampai hingga sekarang, kenapa saya memilih untuk memfokuskan berkarier di dunia programer?? karena saya tertarik dengan bagaimana cara pembuatan program  itu. </p>
+                    <p>Hello, I'm Aris, I'm a Front End Developer. I started studying what a programmer was when I was 15 years old, when I was still in high school until now, why did I choose to focus on a career in the world of programming?? because I am interested in how the program is made. </p>
                 </div>
             </div>
-            
             <!--CLOSE HOME-->
+
             <!--ABOUT-->
             <div class="container-about" id="About-1" >
                     <h1 >About my</h1>
@@ -99,7 +98,7 @@
                             </div>
                             <div class="pembungkus-4">
                                 <div class="text-right">
-                                    <p>berikut beberapa tolls pemograman yang sudah saya miliki secara kemampuan dan pemahaman.</p>
+                                    <p>Below are some programming tools that I already have the ability and understanding of</p>
                                 </div>
                             </div>
                         </div>
@@ -108,18 +107,20 @@
             <div class="pembungkus-5" id="Introduction-1">
                     <h2>Creativity My</h2>
                     <div class="paragraf-kreatif" id="Contact-1" style="transition: 5s ease;">
-                        <p>Selain programer saya juga seorang pembisnis tapi bisa di bilang hanya sekedar bisnis kecil kecilan yaitu berjualan akun game, tidak hanya berjualan game, tapi saya juga menjadi perantara dalam pembelian akun game tersebut. saya memulai berbisnis pada umur 13 tahun di bangku SMP, dan saya memulai menjadi seorang programer di bangku SMK hingga sekarang.</p>
+                        <p>Apart from being a programmer, I am also a businessman, but you could say it is just a small business, namely selling game accounts, not only selling games, but I am also an intermediary in purchasing game accounts. I started doing business at the age of 13 in junior high school, and I started as a programmer in vocational school until now.</p>
                     </div>
                     <div class="pembungkus-10">
                         <div class="pembungkus-view-creatif-mobbile">
                             <div class="bg-view-creatif-mobbile">
                                 <div class="pembungkus-image-creatif-mobbile" data-aos="flip-left" data-aos-easing="linear"
                                 data-aos-duration="1500">
-                                    <img src="/img/iPhone-13-PRO-www.figma.com.svg" alt="" id="Ui-mobbile">
+                                <video controls>
+                                    <source src="/img/iPhone-13-PRO-www.figma.com-TkSS3YvXY-.webm" type="video/webm">
+                                </video>
                                 </div>
                                 <div class="keterangan-creatif-mobbile">
-                                    <h4>Berikut adalah sebuah Design Ui Yang pernah saya buat. </h4>
-                                    <p>Sebelum saya menjadi seorang Programer saya juga pernah menjadi seorang Ui/Ux Design Tapi saya pikir untuk Menjadi Seorang Designer itu tidak mudah dan saya merasa kurang ketika saya menjalankan nya.</p>
+                                    <h4>The following is a UI design that I have made </h4>
+                                    <p>Before I became a programmer, I was also a Ui/Ux designer. But I think becoming a designer is not easy and I felt inadequate when I did it.</p>
                                 </div>
                                 <div class="pembungkus-view-button">
                                     <button class="view-button-1" data-tilt=""><a href="https://www.figma.com/proto/TGXwulz4KuCI3AA8p68i1u/Untitled?node-id=36-719&t=86l1a1BCsAyUATp3-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=36%3A212&show-proto-sidebar=1 " class="a-href">Figma</a></button>
@@ -128,12 +129,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mobile_overlay" >
-                            <div class="overlay_img_mobile">
-                                <button class="btn-x-2" onclick="handleClickMobile()">x</button>
-                                <img src="/img/iPhone-13-PRO-www.figma.com.svg" alt="">
-                            </div>  
                         </div>
                         <div class="pembungkus-view-kreatif" id="business">
                             <div class="bg-view-creatif">
@@ -153,11 +148,10 @@
                                             <img src="/img/WhatsApp Image 2024-05-01 at 11.29.43.svg" alt="" class="image-creatif-3" data-aos="fade-down"
                                             data-aos-easing="linear"
                                             data-aos-duration="3000">
-
-                                    </div>
+                                        </div>
                                 </div>
                                 <div class="keterangan-creatif">
-                                <p>Berikut merupakan Bisnis kecil-kecilan saya, yaitu bisnis berjualan akun game </p>
+                                <p>The following is my small business, namely the business of selling game accounts</p>
                                 </div>
                                 <div class="pembungkus-view-button-right">
                                     <button class="view-button-3" data-tilt=""><a href="#" class="a-href">See</a></button>
@@ -170,33 +164,32 @@
                 </div>
             </div>
                 <!-- ABOUT CLOSED -->
+
                 <div class="pembungkus-9" id="Default-contact" >
                     <div class="pemisah" data-aos="fade-down"></div>
                 </div>  
+
                 <!-- CONTACT -->
                 <div class="container-contact"  data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
-                    <form  class="pembungkus-contact" id="myForm" onsubmit="reset()" onclick="sendMail()">
-                        <div class="contact-text" >Contact</div>
+                    <form id="myForm" class="pembungkus-contact" >
+                        <div class="contact-text" >Contact</div>        
                         <div class="pembungkus-6">
-                            <input type="text" class="ab" id="name" placeholder="Your name" required>
-                            <div class="place-1">Your name</div>
-                            <input type="tel" class="bc" id="phone" placeholder="phone" required>
-                            <div class="place-2">Phone</div>
+                            <input type="text" id="name" placeholder="Your name" required>
+                            <input type="tel"  id="phone" placeholder="Phone" required>
                         </div>
                         <div class="pembungkus-7">
-                            <input type="text" class="cd" id="email" placeholder="Email" required>
-                            <div class="place-3">Email</div>
-                            <textarea class="de" id="message" placeholder="Your Message" required></textarea>
-                            <div class="place-4">Your Message</div>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <textarea id="message"  placeholder="Your Message"></textarea>
                             <div class="pembungkus-8" >
-                                <button class="ef" id="submit" type="submit" onsubmit="submit()">Submit</button>
+                                <button type="submit" id="submit-id" onclick="handleSubmit()">Submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
                 <!-- CONTACT CLOSED -->
+
                 <!--FOOTER-->
                 <footer>
                     <div class="pembungkus-footer">
@@ -254,33 +247,10 @@
                         </div>
                     </div>
                 </footer>
-
-                <!-- FOOTER CLOSED -->
+            <!-- FOOTER CLOSED -->
     </section>
-    <!-- Email-Vanila-Js -->
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-   function submit(){
-      emailjs.init("3uvEceny1lA8EoJuc");
-   
-   emailjs.sendForm('service_967jcut', 'template_usanduv', '#myForm') //use your Service ID and Template ID
-  .then(function (response) {
-    alert('SUCCESS!', response.status, response.text);
-  }, function (error) {
-    alert ('FAILED...', error);
-  }); 
-   };
-   emailjs.send("service_967jcut","template_usanduv");
-    </script>
-
-
-    <!-- Email-Vanila-Js-Closed -->
-    <script>
-        feather.replace();
-      </script>
-    <script src="/structure/index.js"></script>
+    <script>feather.replace()</script>
+    <script src="/structure/main.js"></script>
     <script type="text/javascript" src="/structure/vanilla-tilt.babel.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
