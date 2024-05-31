@@ -89,13 +89,6 @@ nav ul li a:hover {
 nav ul .menu-logout {
     display: none;
 }
-/* #menu-hamburger{
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1.8rem 3rem;
-    display: none;
-} */
 .hamburger-menu { 
     display: flex;
     flex-direction: column;
@@ -135,15 +128,7 @@ nav ul .menu-logout {
     opacity: 0;
     width: 0;
 } 
-
-
-
-
 /* CLOSE NAVIGATION */
-
-/* MENU HOME UTAMA */
-
-/* MENU HOME UTAMA CLOSE */
 
 /* MENU HERO SECTION HOME */
 .container-all .container-home{
@@ -191,7 +176,6 @@ nav ul .menu-logout {
     border-left: 4px solid var(--font);
     animation: animate 8s steps(12) infinite;
 }
-
 .container-all .hero-home h1, h2 {
     position: relative;
 }
@@ -326,7 +310,6 @@ nav ul .menu-logout {
 
 /* MENU HERO SECTION HOME CLOSED */
 
-        
 /* MENU HERO SECTION ABOUT */
 .container-about {
     color: var(--bold);
@@ -355,7 +338,7 @@ nav ul .menu-logout {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 220px;
     padding-top: 160px;
 }
 .logo-bahasa-program{
@@ -546,8 +529,8 @@ nav ul .menu-logout {
     display: flex;
 }
 .image-creatif-1,
- .image-creatif-2,
-  .image-creatif-3{
+.image-creatif-2,
+.image-creatif-3{
     height: 330px;
     width: 170px;
     transition: .1s ease-in-out;
@@ -579,9 +562,9 @@ nav ul .menu-logout {
     width: 374px;
     background-color: var(--linear-green);
 }
-.pembungkus-image-creatif-mobbile img {
+.pembungkus-image-creatif-mobbile video {
     height: 500px;
-
+    border-radius: 40px;
 }
 .keterangan-creatif-mobbile{
     padding: 2rem;
@@ -601,7 +584,7 @@ nav ul .menu-logout {
     color: var(--bold);
 }
 .view-button-1,
-  .view-button-3 {
+.view-button-3 {
     cursor: pointer;
     border-radius: 5px;
     padding: 0.7rem 1.6rem;
@@ -610,7 +593,7 @@ nav ul .menu-logout {
     border: 1px solid var(--font);
 }
 .view-button-2,
- .view-button-4{
+.view-button-4{
     cursor: pointer;
     border-radius: 5px;
     padding: 0.7rem 1.6rem;
@@ -619,47 +602,22 @@ nav ul .menu-logout {
     border: none;
 }
 .view-button-1:hover,
-  .view-button-3:hover{
+.view-button-3:hover{
     background-color:  #9dc7c792;
     border: 1px solid var(--linear-green);
 }
 .view-button-2:hover,
- .view-button-4:hover{
+.view-button-4:hover{
     background-color:  var(--light);
     border: 1px solid var(--font);
 }
-.mobile_overlay{
-    background-color: rgba(0, 0, 0, 0.674);
-    height:    95%;
-    width: 30%;
-    position: absolute; 
-    border-radius: 50px;
-    z-index: 1;
-    display: none;
-    right: 450px;
-    top: 1970px;
-}
-.overlay_img_mobile img{
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4.5rem;
-    width: 270px;
-}
-.btn-x-2{
-    position: absolute;        
-    width: 8%;
-    height: 5%;
-    border-radius: 5px;
-    right: 40px;
-}
-    /* MENU HERO SECTION ABOUT CLOSED */
+
+/* MENU HERO SECTION ABOUT CLOSED */
 .pembungkus-9{
     display: flex;
     justify-content: center;
     padding-top: 200px;
- }
+}
 .pemisah{
     width: 70%;
     height: 5px;
@@ -696,7 +654,7 @@ nav ul .menu-logout {
     position: relative;
     flex-wrap: wrap;
 }
-.ab{
+#name{
     background-color: transparent;
     width: 372px;
     height: 55px;
@@ -708,27 +666,7 @@ nav ul .menu-logout {
     z-index: 1111;
     
 }
-.ab:focus,
-.ab:valid{
-    color: var(--bold);
-    border: 1px solid var(--bold);
-}
-.ab:focus + .place-1,
-.ab:valid + .place-1{
-    color: var(--bold);
-    transform: translate(-15px,-16px) scale(0.88);
-}
-.place-1{
-    position: absolute;
-    left: 80px;
-    top: 65px;
-    color: var(--bold);
-    transition: 0.2s ease;
-}
-textarea::placeholder, input::placeholder{
-    color: transparent;
-}
-.bc{
+#phone{
     background-color: transparent;
     width: 372px;
     height: 55px;
@@ -739,23 +677,7 @@ textarea::placeholder, input::placeholder{
     padding: 10px;
     z-index: 1111;
 }
-.bc:focus,
-.bc:valid{
-    color: var(--bold);
-    border: 1px solid var(--bold);
-}
-.bc:focus + .place-2 ,
-.bc:valid + .place-2{
-    color: var(--bold);
-    transform: translate(-15px,-16px) scale(0.88);
-}
-.place-2{
-    position: absolute;
-    right: 370px;
-    top: 65px;
-    color: var(--bold);
-    transition: 0.2s ease;
-}
+
 .pembungkus-7{
     position: relative;
     display: flex;
@@ -765,7 +687,7 @@ textarea::placeholder, input::placeholder{
     flex-direction: column;
     gap: 2rem;
 }
-.cd{
+#email{
     background-color: transparent;
     width: 779px;
     height: 55px;
@@ -776,70 +698,39 @@ textarea::placeholder, input::placeholder{
     padding: 10px;
     z-index: 1111;
 }
-.cd:focus,
-.cd:valid{
-    color: var(--bold);
-    border: 1px solid var(--bold);
-}
-.cd:focus + .place-3,
-.cd:valid + .place-3{
-    color: var(--bold);
-    transform: translate(-15px,-16px) scale(0.88);
-}
-.place-3{
-    position: absolute;
-    top: 50px;
-    left: 80px;
-    color: var(--bold);
-    transition: 0.2s ease;
-}
-.de{
+
+#message{
     background-color: transparent;
     width: 779px;
     height: 213px;
     border-radius: 10px;
     border: 1px solid var(--redup);
     transition: 0.1s ease;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
     z-index: 1111;
+    padding: 10px;
 }
-.de:focus,
-.de:valid{
-    color: var(--bold);
-    border: 1px solid var(--redup);
+textarea::placeholder{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
 }
-.de:focus + .place-4,
-.de:valid + .place-4{
-    color: var(--bold);
-    transform: translate(-15px,-16px) scale(0.88);
-}
-.place-4{
-    position: absolute;
-    left: 80px;
-    top: 140px;
-    color: var(--bold);
-    transition: 0.2s ease;
-}
-form .pembungkus-7 textarea{
+form .pembungkus-7 #message{
     padding-top: 2rem;
     font-size: 14px;
 }
-.ef{
+#submit-id{
     background-color: transparent;
     width: 779px;
     height: 55px;
     border-radius: 10px;
     border: 1px solid var(--redup);
 }
-.ef:hover{
+#submit-id:hover{
     border: 1px solid var(--bold);
     background-color: #9dc7c792;
 }
-
-
 /* MENU HERO SECTION CONTACT CLOSE */
+
 /* FOOTER */
 .pembungkus-footer{
     width: 100%;
@@ -882,7 +773,7 @@ form .pembungkus-7 textarea{
 }
 .home-footer .home-h2-1,
 .contact-footer .contact-h2-3,
- .about-footer .about-h2-2{
+.about-footer .about-h2-2{
     padding-bottom: 1rem;
 }
 .home-footer-a,
@@ -892,8 +783,8 @@ form .pembungkus-7 textarea{
     flex-direction: column;
 }
 .home-footer-a a,
- .about-footer-a a,
-  .contact-footer-a a{
+.about-footer-a a,
+.contact-footer-a a{
     display: flex;
     text-align: center;
     padding-top: 0.6rem;
@@ -938,14 +829,16 @@ form .pembungkus-7 textarea{
 .copy-right-1{
     color: var(--bold);
 }
-
+.info_1{
+    color: black;
+}
 /* FOOTER CLOSED */
 
 /* @ MEDIA ALL */
 @media screen and (max-width: 568px) {
 
     /* NAVIGATION */
-     nav ul{
+    nav ul{
         position: absolute;
         background-color:#9dc7c751;
         backdrop-filter: blur(10px);
@@ -1009,8 +902,6 @@ form .pembungkus-7 textarea{
         display: '';
         padding-top: 3rem;
         gap: 2rem;
-
-
     }
     .btn-box-home-1 a{
         text-decoration: none;
@@ -1081,6 +972,9 @@ form .pembungkus-7 textarea{
     .inBg{
         width: 350px;
     }
+    .img-profile{
+        left: 280px;
+    }
     .img-kode .side-bg{
         position: absolute;
         left: 30px;
@@ -1124,7 +1018,6 @@ form .pembungkus-7 textarea{
     .pemisah-img{
         position: static;
     }
-
     .bg-view-creatif-mobbile{
         display: flex;
         justify-content: center;
@@ -1181,19 +1074,18 @@ form .pembungkus-7 textarea{
         right: 40px;
 
     }
-     .image-creatif-2{
+    .image-creatif-2{
         position: absolute;
         right: -59px;
-     }
-     .image-creatif-3{
+    }
+    .image-creatif-3{
         position: absolute;
         right:-160px;
         
-     }
-    
-     .pembungkus-image-TRX-0{
+    }
+    .pembungkus-image-TRX-0{
         position: absolute;
-     }
+    }
     .pembungkus-image-TRX{
         position: absolute;
         display: flex;
@@ -1231,7 +1123,7 @@ form .pembungkus-7 textarea{
     .pembungkus-7{
         padding-top: 15px;
     }
-    .ab, .bc, .cd, .ef{
+    #name, #phone, #email, #submit-id{
         width: 265px;
         height: 40px;
         border-radius: 5px;
@@ -1242,15 +1134,15 @@ form .pembungkus-7 textarea{
     .pembungkus-8{
         padding-top: 1.1rem;
     }
-    .de{
+    #message{
         width: 265px;
         height: 60px;
         border-radius: 5px;
     }
-    textarea::placeholder, input::placeholder{
+    #message::placeholder, input::placeholder{
         color: var(--redup);
     }
-    textarea::placeholder{
+    #message::placeholder{
         position: absolute;
         top: 10px;
     }
@@ -1271,7 +1163,7 @@ form .pembungkus-7 textarea{
         gap: 2rem;
     }
     .line-left,
-     .line-right{
+    .line-right{
         display: none;
     }
     .pembungkus-line{
@@ -1290,38 +1182,20 @@ form .pembungkus-7 textarea{
         gap: 5.5rem;
     }
     .home-footer,
-     .about-footer,
-      .contact-footer{
+    .about-footer,
+    .contact-footer{
         text-align: center;
     }
     .home-footer-a a,
-     .about-footer-a a,
-      .contact-footer-a a{
+    .about-footer-a a,
+    .contact-footer-a a{
         display: block;
         align-items: center;
         text-align: center;
         font-size: 16px;
-      }
-  
+    }
     /* FOOTER CLOSED */
 }
-@media screen and (max-width: 1030px){
-
-/* HOME */
-
-/* HOME CLOSED */
-/* ABOUT */
-/* ABOUT CLOSED */
-/* CONTACT */
-/* CONTACT CLOSED */
-.container-about{
-    padding-top: 600px;
-}
-.pembungkus-2{
-    padding-top: 5x60px;
-}
-}
-
 @keyframes showRight {
     100% {
         width: 0;
